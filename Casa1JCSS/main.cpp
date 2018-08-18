@@ -4,6 +4,10 @@
 //Incluimos las librerias
 //#include <GL/glut.h>
 //#include <stdlib.h>
+/*	Juan Carlos Salazar Santiago
+	Ejercicio de casa 1
+	Visual Studio 2017
+*/
 #include "Main.h"
 
 
