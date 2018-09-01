@@ -1,4 +1,4 @@
-//Semestre 2017 - 2
+//Semestre 2019 - 1
 //************************************************************//
 //************************************************************//
 //************** Alumno (s): Salazar Santiago Juan Carlos*****//
@@ -41,14 +41,14 @@ void prisma(float x)
 	/* Cambiamos los elementos de la matriz para que sea un prisma con lados iguales y tenga la misma distancia
 	del eje z positivo al eje z negativo ademas su posicion estara en el centro */
 	GLfloat vertice[8][3] = {
-				{x ,-x, x},    //Coordenadas Vértice 0 V0
-				{-x ,-x, x},    //Coordenadas Vértice 1 V1
-				{-x ,-x, -x},    //Coordenadas Vértice 2 V2
-				{x ,-x, -x},    //Coordenadas Vértice 3 V3
-				{x ,x, x},    //Coordenadas Vértice 4 V4
-				{x ,x, -x},    //Coordenadas Vértice 5 V5
-				{-x ,x, -x},    //Coordenadas Vértice 6 V6
-				{-x ,x,x},    //Coordenadas Vértice 7 V7
+				{x ,-x, x},    //Coordenadas VÃ©rtice 0 V0
+				{-x ,-x, x},    //Coordenadas VÃ©rtice 1 V1
+				{-x ,-x, -x},    //Coordenadas VÃ©rtice 2 V2
+				{x ,-x, -x},    //Coordenadas VÃ©rtice 3 V3
+				{x ,x, x},    //Coordenadas VÃ©rtice 4 V4
+				{x ,x, -x},    //Coordenadas VÃ©rtice 5 V5
+				{-x ,x, -x},    //Coordenadas VÃ©rtice 6 V6
+				{-x ,x,x},    //Coordenadas VÃ©rtice 7 V7
 	};
 
 
@@ -110,7 +110,7 @@ void display(void)   // Creamos la funcion donde se dibuja
 	glMatrixMode(GL_MODELVIEW);
 	glLoadIdentity();
 
-	//Poner Código Aquí.
+	//Poner CÃ³digo AquÃ­.
 	/*Para la respectiva traslacion de las figuras*/
 	glTranslatef(transX, transY, transZ);
 	/*Para indicar la posicion del prisma*/
@@ -249,13 +249,13 @@ int main(int argc, char** argv)   // Main Function
 	glutInit(&argc, argv); // Inicializamos OpenGL
 						   //glutInitDisplayMode (GLUT_RGBA | GLUT_SINGLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Sencillo )
 	glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH); // Display Mode (Clores RGB y alpha | Buffer Doble )
-	glutInitWindowSize(500, 500);	// Tamaño de la Ventana
+	glutInitWindowSize(500, 500);	// TamaÃ±o de la Ventana
 	glutInitWindowPosition(0, 0);	//Posicion de la Ventana
 	glutCreateWindow("Practica 3"); // Nombre de la Ventana
 	InitGL();						// Parametros iniciales de la aplicacion
-	glutDisplayFunc(display);  //Indicamos a Glut función de dibujo
-	glutReshapeFunc(reshape);	//Indicamos a Glut función en caso de cambio de tamano
-	glutKeyboardFunc(keyboard);	//Indicamos a Glut función de manejo de teclado
+	glutDisplayFunc(display);  //Indicamos a Glut funciÃ³n de dibujo
+	glutReshapeFunc(reshape);	//Indicamos a Glut funciÃ³n en caso de cambio de tamano
+	glutKeyboardFunc(keyboard);	//Indicamos a Glut funciÃ³n de manejo de teclado
 	glutSpecialFunc(arrow_keys);	//Otras
 	glutMainLoop();          // 
 
