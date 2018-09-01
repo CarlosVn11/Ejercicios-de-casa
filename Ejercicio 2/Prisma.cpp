@@ -13,6 +13,9 @@
 /* 
 					LA FUNCION PRISMA ESTA POR LA LINEA 120
 					COMO PARAMETRO ACEPTA UN VALOR FLOTANTE POSITIVO
+					El prisma se puede mover hacia la izquierda con la letra “A” o “a” o 
+					hacia la derecha con la letra “B” o “b”, hacia arriba con “R” o “r”, 
+					hacia abajo con “t”, hacia al frente con “w” o “W” y hacia atrás con “s” o “S”.
 					
 */
 
